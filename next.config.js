@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath: '/HooBank',
+  basePath: '/HooBank',
 };
 
 module.exports = nextConfig

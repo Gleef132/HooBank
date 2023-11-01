@@ -24,7 +24,7 @@ const Card: FC<ICard> = ({ img, name, role, text, isMobile }) => {
       onMouseLeave={() => mouseHandle(false)}
     >
       <div className={cl.card__icon}>
-        <Image src={isMouseEnter ? '/“-hover.svg' : '/“.svg'} alt='“' width={42} height={27} priority />
+        <Image src={isMouseEnter ? './“-hover.svg' : './“.svg'} alt='“' width={42} height={27} priority />
       </div>
       <p className={cl.card__text}>{text}</p>
       <div className={cl.card__item}>
