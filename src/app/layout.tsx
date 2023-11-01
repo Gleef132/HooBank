@@ -8,6 +8,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'], var
 export const metadata: Metadata = {
   title: 'HooBank',
   description: 'Bank about Hoo',
+  icons: '/logo.svg'
 }
 
 export default function RootLayout({
