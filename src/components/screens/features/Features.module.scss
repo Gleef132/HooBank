@@ -1,0 +1,105 @@
+@import '@/styles/mixins';
+
+.features {
+  padding-top: 100px;
+  overflow-x: clip;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value('gap', 100, 50, 0);
+    position: relative;
+
+    &__gradient {
+      position: absolute;
+      z-index: 0;
+      @include adaptiv-value('right', -500, -10, 0);
+      top: 40%;
+      height: 40%;
+      width: 40%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      &:nth-child(2) {
+        filter: blur(100px);
+      }
+
+      &:nth-child(3) {
+        width: 55%;
+        height: 55%;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__title {
+    max-width: 470px;
+    font-size: 48px;
+    line-height: 76px;
+    font-weight: 600;
+    color: $titleColor;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__sponsors {
+    width: 100%;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__sponsor {
+    position: relative;
+    display: flex;
+
+    &:nth-child(3) {
+      margin-top: -15px;
+    }
+
+    &:nth-child(4) {
+      margin-top: -5px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .features {
+    &__text {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .features {
+    &__title {
+      @include adaptiv-value('font-size', 48, 32, 0);
+      line-height: 1.5;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}

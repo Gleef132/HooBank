@@ -1,0 +1,55 @@
+@import 'null';
+@import 'mixins';
+
+body {
+	color: $textColor;
+	font-size: 18px;
+	background: $bodyBg;
+	scroll-behavior: smooth;
+	font-family: var(--poppins), sans-serif;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+.header-active {
+	background: $bodyBg;
+}
+
+.btn {
+	background: $btnGradient;
+	@include adaptiv-value('padding-top', 20, 10, 0);
+	@include adaptiv-value('padding-bottom', 20, 10, 0);
+	@include adaptiv-value('padding-left', 30, 15, 0);
+	@include adaptiv-value('padding-right', 30, 15, 0);
+	color: $bodyBg;
+	width: fit-content;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.text-gradient {
+	background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	// text-fill-color: transparent;
+}
+
+.blue-gradient {
+	background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214D76 100%);
+	filter: blur(123px);
+}
+
+.pink-gradient {
+	background: linear-gradient(90deg, #F4C4F3 0%, #FC67FA 100%);
+	filter: blur(900px);
+}
+
+.white-gradient {
+	background: rgba(255, 255, 255, 0.6);
+	filter: blur(750px);
+}

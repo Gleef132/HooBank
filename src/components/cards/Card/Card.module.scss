@@ -1,0 +1,64 @@
+@import '@/styles/mixins';
+
+.card {
+  max-width: 370px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 20px;
+  @include adaptiv-value('padding-top', 60, 20, 0);
+  @include adaptiv-value('padding-bottom', 60, 20, 0);
+  @include adaptiv-value('padding-right', 40, 10, 0);
+  @include adaptiv-value('padding-left', 40, 10, 0);
+  @include adaptiv-value('gap', 40, 20, 0);
+
+  &:hover {
+    background: $gradientBottomRight;
+  }
+
+  // &__icon {}
+
+  &__text {
+    color: $titleColor;
+    @include adaptiv-value('font-size', 18, 14, 0);
+    @include adaptiv-value('line-height', 32, 20, 0);
+    min-height: 128px;
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    color: $titleColor;
+    font-size: 20px;
+  }
+
+  &__role {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    background: $gradientBottomRight;
+  }
+}
