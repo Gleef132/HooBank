@@ -18,7 +18,7 @@ const About: FC = () => {
               <div className={cl.about__services}>
                 <div className={cl.about__service}>
                   <div className={cl.about__service__icon}>
-                    <Image src={'/star-icon.svg'} alt='star' width={40} height={40} priority />
+                    <Image src={'./star-icon.svg'} alt='star' width={40} height={40} priority />
                   </div>
                   <div className={cl.about__service__box}>
                     <h3 className={cl.about__service__title}>Rewards</h3>
@@ -27,7 +27,7 @@ const About: FC = () => {
                 </div>
                 <div className={cl.about__service}>
                   <div className={cl.about__service__icon}>
-                    <Image src={'/shield-icon.svg'} alt='shield' width={40} height={40} priority />
+                    <Image src={'./shield-icon.svg'} alt='shield' width={40} height={40} priority />
                   </div>
                   <div className={cl.about__service__box}>
                     <h3 className={cl.about__service__title}>100% Secured</h3>
@@ -36,7 +36,7 @@ const About: FC = () => {
                 </div>
                 <div className={cl.about__service}>
                   <div className={cl.about__service__icon}>
-                    <Image src={'/send-icon.svg'} alt='star' width={40} height={40} priority />
+                    <Image src={'./send-icon.svg'} alt='star' width={40} height={40} priority />
                   </div>
                   <div className={cl.about__service__box}>
                     <h3 className={cl.about__service__title}>Balance Transfer</h3>
@@ -52,7 +52,7 @@ const About: FC = () => {
               <div className={`${cl.about__gradient} white-gradient`}></div>
               <div className={`${cl.about__gradient} blue-gradient`}></div>
               <div className={cl.about__item__img}>
-                <img src={'/payment.png'} alt='payment' />
+                <img src={'./payment.png'} alt='payment' />
               </div>
             </div>
             <div className={cl.about__item}>
@@ -60,10 +60,10 @@ const About: FC = () => {
               <p className={cl.about__item__text}>Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.</p>
               <div className={cl.about__item__btns}>
                 <button className={cl.about__item__btn}>
-                  <Image src={'/app-store.svg'} alt='app-store' fill priority />
+                  <Image src={'./app-store.svg'} alt='app-store' fill priority />
                 </button>
                 <button className={cl.about__item__btn}>
-                  <Image src={'/google-play.svg'} alt='app-store' fill priority />
+                  <Image src={'./google-play.svg'} alt='app-store' fill priority />
                 </button>
               </div>
             </div>
@@ -76,7 +76,7 @@ const About: FC = () => {
             </div>
             <div className={cl.about__item}>
               <div className={cl.about__item__img}>
-                <img src={'/cards.png'} alt='payment' />
+                <img src={'./cards.png'} alt='payment' />
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Footer: FC = () => {
           <div className={cl.footer__content}>
             <div className={cl.footer__item}>
               <div className={cl.footer__logo}>
-                <Image src={'/logo.svg'} alt='logo' width={266} height={72} priority />
+                <Image src={'./logo.svg'} alt='logo' width={266} height={72} priority />
               </div>
               <p className={cl.footer__text}>A new way to make the payments easy, reliable and secure.</p>
             </div>
@@ -59,16 +59,16 @@ const Footer: FC = () => {
             <div className={cl.footer__item}>
               <div className={cl.footer__socials}>
                 <div className={cl.footer__social}>
-                  <Image src={'/instagram.svg'} alt='instagram' width={25} height={25} priority />
+                  <Image src={'./instagram.svg'} alt='instagram' width={25} height={25} priority />
                 </div>
                 <div className={cl.footer__social}>
-                  <Image src={'/facebook.svg'} alt='facebook' width={25} height={25} priority />
+                  <Image src={'./facebook.svg'} alt='facebook' width={25} height={25} priority />
                 </div>
                 <div className={cl.footer__social}>
-                  <Image src={'/twitter.svg'} alt='twitter' width={25} height={25} priority />
+                  <Image src={'./twitter.svg'} alt='twitter' width={25} height={25} priority />
                 </div>
                 <div className={cl.footer__social}>
-                  <Image src={'/github.svg'} alt='github' width={25} height={25} priority />
+                  <Image src={'./github.svg'} alt='github' width={25} height={25} priority />
                 </div>
               </div>
             </div>

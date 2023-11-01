@@ -10,7 +10,7 @@ const Header: FC = () => {
       <div className="_container">
         <div className={cl.header__body}>
           <div className={cl.header__logo}>
-            <Image src={'/logo.svg'} alt='Logo' width={100} height={30} priority />
+            <Image src={'./logo.svg'} alt='Logo' width={100} height={30} priority />
           </div>
           <HeaderMenu />
         </div>

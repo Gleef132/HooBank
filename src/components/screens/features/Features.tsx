@@ -18,16 +18,16 @@ const Features: FC = () => {
           <CardList />
           <div className={cl.features__sponsors}>
             <div className={cl.features__sponsor}>
-              <Image src={'/sponsor-1.png'} alt='' width={200} height={60} priority />
+              <Image src={'./sponsor-1.png'} alt='' width={200} height={60} priority />
             </div>
             <div className={cl.features__sponsor}>
-              <Image src={'/sponsor-2.png'} alt='' width={200} height={40} priority />
+              <Image src={'./sponsor-2.png'} alt='' width={200} height={40} priority />
             </div>
             <div className={cl.features__sponsor}>
-              <Image src={'/sponsor-3.png'} alt='' width={200} height={40} priority />
+              <Image src={'./sponsor-3.png'} alt='' width={200} height={40} priority />
             </div>
             <div className={cl.features__sponsor}>
-              <Image src={'/sponsor-4.png'} alt='' width={200} height={40} priority />
+              <Image src={'./sponsor-4.png'} alt='' width={200} height={40} priority />
             </div>
           </div>
         </div>
